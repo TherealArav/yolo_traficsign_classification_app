@@ -1,0 +1,90 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    color: white;
+    background-color: #151515; 
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main-container, .result-container-card {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 600px;
+    background-color: #151515; 
+    padding: 30px;
+}
+
+.main-container-header-01, .result-container-header-01 {
+
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Vidaloka", serif;
+    margin-bottom: 20px;
+    text-align: center;
+    
+
+}
+
+.drop-zone {
+
+    width: 100%;
+    border: 3px dashed #ccc;
+    border-radius: 10px;
+    padding: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.drop-zone:hover {
+    border-color: #4a90e2;         
+    background-color: rgba(74, 144, 226, 0.1); 
+    cursor: pointer;              
+}
+
+.drop-zone.dragover {
+    border-color: #00ff00;         
+    background-color: rgba(0, 255, 0, 0.1);    
+    transform: scale(1.02);        
+}
+
+.result-container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    max-width: 75%;
+    border-radius: 8px;
+    margin-top: 20px;   
+}
+
+.main-container-text-01, .result-container-text-01 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 24px;
+    font-style: normal;
+    margin-top: 30px;
+    line-height: 1.6;
+    padding-left: 20px;
+    text-align: center; 
+}
+
+.hidden {
+    display: none;
+}

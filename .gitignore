@@ -1,0 +1,31 @@
+# --- Python & Virtual Environment ---
+__pycache__/
+*.pyc
+env/
+venv/
+.pytest_cache/
+
+# --- Environment Variables (CRITICAL: NEVER COMMIT THIS) ---
+.env
+
+# --- Database ---
+*.sqlite3
+*.db
+
+# --- Docker ---
+.dockerignore
+
+# --- VS Code Settings ---
+.vscode/
+
+# --- Operating System Junk ---
+.DS_Store
+Thumbs.db
+
+# --- Application Data ---
+static/predictions/*
+!static/predictions/.gitkeep
+
+# --- Large Model Files ---
+# *.pt
+# *.onnx

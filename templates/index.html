@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCV Trafic Sign Classificiation</title>
+    <link rel="stylesheet"  href="/static/css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <h1 class="main-container-header-01">Trafic Sign Classificiation</h1>
+            <div id="drop-zone" class="drop-zone">
+                <p class = "main-container-text-01"> Welcome to the Trafic Sign Classificiation App! This application can classify four classes of trafic sign, which include: stop sign, speed limits, trafic light and cross walks.</p>
+                <P class = 'main-container-text-01'>Drag and drop the image, for image classificiation</P>
+                <input type="file" id="file-input" hidden accept="image/*">
+            </div>
+        </div>
+
+        <div id="result-container" class="hidden result-container-card">
+            <h2 class="result-container-header-01">Iamge Detection</h2>
+            <img id="result-image" src="" alt="Uploaded Image" class="result-container-image">
+            <p id="loading-text" class="hiden">Processing...</p>
+            <p id='result-label' class="result-container-text-01"></p>
+        </div>
+    </main>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
