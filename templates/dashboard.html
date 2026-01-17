@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dashboard.css') }}">
+</head>
+<body>
+    
+    <section class="dashboard-header">
+        <h1>Admin Dashboard</h1>
+        <p>Analyse user queries for data analysis</p>
+    </section>
+    
+    <main class="main-dashboard">
+        
+        <div class="card metric-card">
+            <h3>Total Predictions</h3>
+            <div class='total-count' id='update-count'>Loading...</div>
+        </div>
+
+        <div class="dashboard-grid">
+            
+            <div class="card table-card">
+                <h3>Detailed Breakdown</h3>
+                <table class='table-data'>
+                    <thead>
+                        <tr>
+                            <th>Class</th>
+                            <th>Count</th>
+                        </tr>
+                    </thead>
+                    <tbody id='table-body'>
+                        </tbody>
+                </table>
+            </div>
+
+            <div class="card chart-card">
+                <h3>Visual Distribution</h3>
+                <div class="trafic-chart-container">
+                    <canvas id="trafic-chart"></canvas>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+</body>
+</html>

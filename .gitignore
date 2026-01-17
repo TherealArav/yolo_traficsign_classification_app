@@ -4,6 +4,7 @@ __pycache__/
 env/
 venv/
 .pytest_cache/
+demo.py
 
 # --- Environment Variables (CRITICAL: NEVER COMMIT THIS) ---
 .env
@@ -21,6 +22,7 @@ venv/
 # --- Operating System Junk ---
 .DS_Store
 Thumbs.db
+queries
 
 # --- Application Data ---
 static/predictions/*
@@ -29,3 +31,10 @@ static/predictions/*
 # --- Large Model Files ---
 # *.pt
 # *.onnx
+
+# --- Node Modules ---
+node_modules/
+
+# --- JSON Files ---
+package-lock.json
+package.json
