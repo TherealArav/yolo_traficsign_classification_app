@@ -13,6 +13,7 @@ A robust Computer Vision web application that detects and classifies traffic sig
 * **Persistent Logging:** Automatically saves prediction results, timestamps, and detection counts to a PostgreSQL database.
 * **Production Ready:** Fully containerized with Docker for consistent deployment across environments.
 * **Data Persistence:** Docker Volume mapping ensures images and logs survive container restarts.
+* **Admin Dashboard:**  Admin Dashboard at /dashboard for analyzing number of queries sent to system and from each category.
 
 ## Tech Stack
 
@@ -74,6 +75,7 @@ docker run -p 5000:5000 \
 ```
 
 - **Access the App:** Open `http://localhost:5000` in your browser.
+- **Access Dashboard:** Open `http://localhost:5000/dashboard` to view analytics.
 
 - **View Database:** Your local Postgres instance will be populated with prediction logs.
     
@@ -128,10 +130,13 @@ GRANT ALL ON SCHEMA public TO img_classification_traffic_admin;
 traffic-sign-classifier/
 ├── static/
 │   ├── css/style.css       # Frontend styling
+|   ├── css/dashboard.css
 │   ├── js/script.js        # Upload logic & drag-and-drop
+│   ├── js/dashboard.js
 │   └── predictions/        # Output folder for processed images
 ├── templates/
 │   └── index.html          # Main application page
+|   └── dashboard.html
 ├── app.py                  # Main Flask application entry point
 ├── Dockerfile              # Docker build instructions
 ├── requirements.txt        # Python dependencies
